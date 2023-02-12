@@ -1,0 +1,11 @@
+<svg id="paper-plane-solid" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Background" width="32" height="32" fill="rgba(255,255,255,0)"/>
+    </clipPath>
+  </defs>
+  <rect id="Background-2" data-name="Background" width="32" height="32" fill="rgba(255,255,255,0)"/>
+  <g id="paper-plane-solid-2" data-name="paper-plane-solid" clip-path="url(#clip-path)">
+    <path id="Shape" d="M31.128.35a2,2,0,0,1,.844,1.95l-4,26a2,2,0,0,1-2.75,1.538l-7.894-3.281-2.506,4.656A1.5,1.5,0,0,1,12,30.5v-6a1.491,1.491,0,0,1,.319-.919L22.647,10.294a.5.5,0,0,0-.812-.525L10.647,19.888l-2,1.806h0a2,2,0,0,1-2.113.363L1.222,19.844A1.986,1.986,0,0,1,0,18.125,2.012,2.012,0,0,1,1.01,16.263l28-16A2.006,2.006,0,0,1,31.135.35Z" transform="translate(0.003 0)" fill="#fff"/>
+  </g>
+</svg>

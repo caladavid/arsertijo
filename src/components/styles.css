@@ -1,0 +1,154 @@
+
+.worksList > a > span  {
+    display: block;
+    position: relative;
+}
+
+.worksList > a > img {
+    position: absolute;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: transform 250ms, opacity 250ms;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.worksList > a:hover > img {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-magnetic{
+    transition: transform 0.15s linear;
+}
+
+/* // Marquee efecto // */
+
+  .marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee p {
+    display: inline-block;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @-webkit-keyframes marquee {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(-50%, 0, 0);
+    }
+}
+
+.hover-line {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-line:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 8px;
+  right: 0;
+  bottom: 50%;
+  background-color: black;
+  visibility: visible;
+  transition: width 0.25s ease-out;
+}
+  
+.hover-line:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.btn-svg-left{
+  filter: drop-shadow(5px 5px 5px rgb(0 0 0 / 0.8))
+}
+.btn-svg-right{
+  filter: drop-shadow(-5px 5px 5px rgb(0 0 0 / 0.8))
+}
+
+.btn-svg-left:hover path,
+.btn-svg-right:hover path{
+  fill: #376EB0;
+}
+
+.menu-item > div:nth-child(1) span{
+  will-change: transform; 
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition-delay: calc(0.05s * var(--index));
+  transform-origin: bottom;
+  display: inline-block;
+}
+
+.menu-item > div:nth-child(2) span{
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: .5s;
+  transition-delay: calc(0.05s * var(--index));
+  transform-origin: top;
+  display: inline-block;
+  transform: translate3d(0, 100%, 0) rotateX(-90deg);
+}
+
+.menu-item :hover > div:nth-child(1) span{
+  transform: translate3d(0, -100%, 0) rotateX(-90deg);
+}
+
+.menu-item :hover > div:nth-child(2) span{
+  transform: translate3d(0, 0%, 0) rotateX(0deg);
+}
+
+/* // Menu // */
+
+.burger{
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+.hamburger-nav{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px){
+  .hamburger {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    top: -110%;
+    left: 0;
+    z-index: -1;
+  }
+  .hamburger.active{
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+  }
+}
