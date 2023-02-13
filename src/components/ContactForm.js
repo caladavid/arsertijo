@@ -11,8 +11,8 @@ const ContactForm = () => {
   return (
     <div className='flex flex-col text-center h-full '>
         <h1 className='text-3xl sm:text-4xl text-blue font-bold pb-4'>Send me a Message</h1>
-        <form name="contact v2" method="POST" data-netlify="true" action='/contact'>
-            <input type="hidden" name="form-name" value="contact v2" />
+        <form name="contact" method="POST" data-netlify="true" action='/contact'>
+        <input type="hidden" name="form-name" value="contact"/>
             <div >
                 <label htmlFor='name'>
                     <input
