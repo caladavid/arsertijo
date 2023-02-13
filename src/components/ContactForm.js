@@ -11,8 +11,8 @@ const ContactForm = () => {
   return (
     <div className='flex flex-col text-center h-full '>
         <h1 className='text-3xl sm:text-4xl text-blue font-bold pb-4'>Send me a Message</h1>
-        <form name="Contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="Contact" />
+        <form name="contact v2" method="POST" data-netlify="true" action='/contact'>
+            <input type="hidden" name="form-name" value="contact v2" />
             <div >
                 <label htmlFor='name'>
                     <input
@@ -32,7 +32,7 @@ const ContactForm = () => {
                     <input
                     className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
                     placeholder='Email*'
-                    type="text" 
+                    type="email" 
                     id="email" 
                     email="email"
                     value={email}
@@ -71,7 +71,7 @@ const ContactForm = () => {
             </div>
             <div className='w-full mt-3 sm:ml-[10%] flex justify-start '>
                 <button 
-                type='submit'
+                type="submit"
                 className='flex py-3 px-5 bg-blue hover:bg-[#295183] text-white text-xl text'>
                     Send
                     <Paper className='w-6 ml-3 '/>
