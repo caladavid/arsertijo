@@ -3,9 +3,10 @@ import React, { useState } from 'react'
 import { ReactComponent as Paper } from '../icons/Paper.svg'
 
 const ContactForm = () => {
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [message, setMessage] = useState('')
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [subject, setSubject] = useState('');
 
   return (
     <div className='flex flex-col text-center h-full '>
@@ -13,6 +14,7 @@ const ContactForm = () => {
         <form name="contact" method="POST" data-netlify="true">
             <div >
                 <label htmlFor='name'>
+                 <input type="hidden" name="form-name" value="contact" />
                     <input
                     className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
                     placeholder='Full name*'
@@ -40,7 +42,12 @@ const ContactForm = () => {
                 </label>
             </div>
             <div >
-                <select name="Subject" className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'>
+                <select 
+                    name="Subject" 
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
+                    className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
+                >
                     <option value="" disabled selected>Subject*</option>
                     <option value="Thumbnail">Thumbnail</option>
                     <option value="Header">Header</option>
