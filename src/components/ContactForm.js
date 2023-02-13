@@ -11,10 +11,10 @@ const ContactForm = () => {
   return (
     <div className='flex flex-col text-center h-full '>
         <h1 className='text-3xl sm:text-4xl text-blue font-bold pb-4'>Send me a Message</h1>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact v1" method="POST" data-netlify="true">
             <div >
                 <label htmlFor='name'>
-                 <input type="hidden" name="form-name" value="contact" />
+                 <input type="hidden" name="form-name" value="contact v1" />
                     <input
                     className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
                     placeholder='Full name*'
