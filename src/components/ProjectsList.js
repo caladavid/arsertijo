@@ -22,7 +22,7 @@ const ProjectsList = ({ name, src, to }) => {
             ref={Links}>
             <span className='text-[36px] lg:text-[70px] font-normal py-4'> {name} </span> 
             <img 
-                src={require(`../assets/works/General/${src}.png`)} 
+                src={require(`../assets/works/General/${src}.jpg`)} 
                 alt={name}
                 className='w-72 md:w-96 lg:w-[600px] '
                 ref={imgRef}/>

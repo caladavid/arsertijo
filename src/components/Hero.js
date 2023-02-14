@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { motion as m } from 'framer-motion';
 import { containerText } from '../animation/Animation';
 
-import WebsiteImage from '../assets/works/RediseñoWeb/CityManga/Rediseño pagina.png';
+import WebsiteImage from '../assets/works/RediseñoWeb/CityManga/Rediseño pagina.jpg';
 import AnimatedTextCharacter from './AnimatedTextCharacter';
 import Transition from '../animation/Transition';
 

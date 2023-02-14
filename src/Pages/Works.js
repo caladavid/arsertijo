@@ -37,6 +37,16 @@ const Works = () => {
             src='Rediseño pagina'
             to={"/works/Websites"}/>
           <hr className='line-projects'/>
+          <ProjectsList
+            name='Headers'
+            src='Headers'
+            to={"/works/Headers"}/>
+          <hr className='line-projects'/>
+          <ProjectsList
+            name='Advertisements'
+            src='Advertisements'
+            to={"/works/Advertisements"}/>
+          <hr className='line-projects'/>
         </div>
       </div>
     </m.section>
