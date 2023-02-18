@@ -1,21 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { ReactComponent as Paper } from '../icons/Paper.svg'
 
 const ContactForm = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [subject, setSubject] = useState('');
 
   return (
     <div className='flex flex-col text-center h-full '>
         <h1 className='text-3xl sm:text-4xl text-blue font-bold pb-4'>Send me a Message</h1>
         <form 
-            name="contact1" 
+            name="contact" 
             method="POST" 
             data-netlify="true" 
-            data-netlify-recaptcha="true" 
+            action='/contact'
+            data-netlify-recaptcha="true"
             netlify 
-            netlify-honeypot="bot-field"  
+            netlify-honeypot="bot-field"   
         >
-        <input type="hidden" name="form-name" value="contact1"/>
+        <input type="hidden" name="form-name" value="contact"/>
             <div >
                 <label htmlFor='name'>
                     <input
@@ -24,7 +29,9 @@ const ContactForm = () => {
                     type="text" 
                     id="name" 
                     name="name"
+                    value={name}
                     required
+                    onChange={(e) => setName(e.target.value)}
                     />
                 </label>
             </div>
@@ -36,13 +43,17 @@ const ContactForm = () => {
                     type="email" 
                     id="email" 
                     name="email"
+                    value={email}
                     required
+                    onChange={(e) => setEmail(e.target.value)}
                     />
                 </label>
             </div>
             <div >
                 <select 
                     name="role[]" 
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
                     className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
                 >
                     <option value="" disabled selected>Subject*</option>
@@ -61,6 +72,8 @@ const ContactForm = () => {
                     type="text" 
                     id="message" 
                     name="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     />
                 </label>
             </div>
