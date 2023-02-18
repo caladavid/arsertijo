@@ -50,10 +50,9 @@ const ContactForm = () => {
                 </label>
             </div>
             <div >
-                <label htmlFor='subject'>
+                <label>
                     <select 
                         name="subject[]" 
-                        id="subject"
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
                         className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
