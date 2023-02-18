@@ -12,13 +12,13 @@ const ContactForm = () => {
     <div className='flex flex-col text-center h-full '>
         <h1 className='text-3xl sm:text-4xl text-blue font-bold pb-4'>Send me a Message</h1>
         <form 
-            name="contact" 
+            name="contact1" 
             method="POST" 
             data-netlify="true" 
             action='/contact'
             data-netlify-recaptcha="true"   
         >
-        <input type="hidden" name="form-name" value="contact"/>
+        <input type="hidden" name="form-name" value="contact1"/>
             <div >
                 <label htmlFor='name'>
                     <input
