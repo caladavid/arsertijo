@@ -50,19 +50,21 @@ const ContactForm = () => {
                 </label>
             </div>
             <div >
-                <select 
-                    name="role[]" 
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
-                    className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
-                >
-                    <option value="" disabled selected>Subject*</option>
-                    <option value="Thumbnail">Thumbnail</option>
-                    <option value="Header">Header</option>
-                    <option value="Website">Website</option>
-                    <option value="Stream Overlays">Stream Overlays</option>
-                    <option value="Advertisment">Advertisment</option>
-                </select>
+                <label>
+                    <select 
+                        name="role[]" 
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
+                        className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
+                    >
+                        <option value="" disabled selected>Subject*</option>
+                        <option value="Thumbnail">Thumbnail</option>
+                        <option value="Header">Header</option>
+                        <option value="Website">Website</option>
+                        <option value="Stream Overlays">Stream Overlays</option>
+                        <option value="Advertisment">Advertisment</option>
+                    </select>
+                </label>
             </div>
             <div>
                 <label htmlFor='message'>
