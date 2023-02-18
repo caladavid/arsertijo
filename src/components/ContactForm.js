@@ -16,7 +16,7 @@ const ContactForm = () => {
             method="POST" 
             data-netlify="true" 
             action='/contact'
-            netlify-honeypot="bot-field"   
+            data-netlify-recaptcha="true"   
         >
         <input type="hidden" name="form-name" value="contact"/>
             <div >
@@ -40,7 +40,7 @@ const ContactForm = () => {
                     placeholder='Email*'
                     type="email" 
                     id="email" 
-                    email="email"
+                    name="email"
                     value={email}
                     required
                     onChange={(e) => setEmail(e.target.value)}
@@ -49,7 +49,7 @@ const ContactForm = () => {
             </div>
             <div >
                 <select 
-                    name="Subject" 
+                    name="role[]" 
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
                     className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
@@ -62,14 +62,14 @@ const ContactForm = () => {
                     <option value="Advertisment">Advertisment</option>
                 </select>
             </div>
-            <div className=''>
+            <div>
                 <label htmlFor='message'>
                     <textarea
                     className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
                     placeholder='Message*'
                     type="text" 
                     id="message" 
-                    message="message"
+                    name="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     />
@@ -82,6 +82,7 @@ const ContactForm = () => {
                     Send
                     <Paper className='w-6 ml-3 '/>
                 </button>
+                <div data-netlify-recaptcha="true"></div>
             </div>
         </form>
     </div>

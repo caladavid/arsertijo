@@ -29,9 +29,9 @@ const Projects = () => {
             to={"/works/Stream Overlays"}/>
           <hr className='line-projects'/>
           <ProjectsList
-            name='Album Covers'
-            src='Cover music'
-            to={"/works/Album Covers"}/>
+            name='Headers'
+            src='Headers'
+            to={"/works/Headers"}/>
           <hr className='line-projects'/>
           <ProjectsList
             name='Websites'

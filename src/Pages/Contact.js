@@ -21,7 +21,7 @@ const Contact = () => {
           <a href='https://www.instagram.com/arsertijo_artz/' target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className='m-3 hover:text-blue'/></a>
         </div>
         <motion.div 
-          className='absolute top-[10%] xl:top-[20%] left-[65%] lg:left-[50%] '
+          className='absolute top-[15%] xl:top-[25%] left-[70%] lg:left-[55%] '
           animate={{translateY: [10, -10, 10]}} 
           transition={{ repeat: Infinity, duration: 1.5}}
         >
