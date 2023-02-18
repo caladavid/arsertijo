@@ -52,13 +52,13 @@ const ContactForm = () => {
             <div >
                 <label htmlFor='subject'>
                     <select 
-                        name="role[]" 
+                        name="subject[]" 
                         id="subject"
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
                         className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
                     >
-                        <option value="" disabled selected>Subject*</option>
+                        <option value="" disabled="" selected="">Subject*</option>
                         <option value="Thumbnail">Thumbnail</option>
                         <option value="Header">Header</option>
                         <option value="Website">Website</option>
