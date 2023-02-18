@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import { ReactComponent as Paper } from '../icons/Paper.svg'
 
 const ContactForm = () => {
-    const [name, setName] = useState('');
+/*     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [subject, setSubject] = useState('');
+    const [subject, setSubject] = useState(''); */
 
   return (
     <div className='flex flex-col text-center h-full '>
@@ -27,9 +27,9 @@ const ContactForm = () => {
                     type="text" 
                     id="name" 
                     name="name"
-                    value={name}
+/*                     value={name} */
                     required
-                    onChange={(e) => setName(e.target.value)}
+/*                     onChange={(e) => setName(e.target.value)} */
                     />
                 </label>
             </div>
@@ -41,17 +41,17 @@ const ContactForm = () => {
                     type="email" 
                     id="email" 
                     name="email"
-                    value={email}
+/*                     value={email} */
                     required
-                    onChange={(e) => setEmail(e.target.value)}
+/*                     onChange={(e) => setEmail(e.target.value)} */
                     />
                 </label>
             </div>
             <div >
                 <select 
                     name="role[]" 
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
+/*                     value={subject}
+                    onChange={(e) => setSubject(e.target.value)} */
                     className='w-full sm:w-[80%] text-xl outline-none mt-4 placeholder-black p-4 bg-[#D7E2EF]'
                 >
                     <option value="" disabled selected>Subject*</option>
@@ -70,8 +70,8 @@ const ContactForm = () => {
                     type="text" 
                     id="message" 
                     name="message"
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
+/*                     value={message}
+                    onChange={(e) => setMessage(e.target.value)} */
                     />
                 </label>
             </div>
