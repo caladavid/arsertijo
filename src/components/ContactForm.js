@@ -49,7 +49,7 @@ const ContactForm = () => {
                 </label>
             </div>
             <div >
-                <label for='subject'>subject
+                <label for='subject'></label>
                     <select 
                         name="subject[]" 
                         id='subject'
@@ -64,7 +64,7 @@ const ContactForm = () => {
                         <option value="Stream Overlays">Stream Overlays</option>
                         <option value="Advertisment">Advertisment</option>
                     </select>
-                </label>
+
             </div>
             <div>
                 <label htmlFor='message'>
