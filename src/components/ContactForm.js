@@ -49,9 +49,9 @@ const ContactForm = () => {
                 </label>
             </div>
             <div >
-                <label for='subject'>
+                <label for='subject'>subject
                     <select 
-                        name="subject" 
+                        name="subject[]" 
                         id='subject'
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
